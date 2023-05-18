@@ -42,12 +42,23 @@ header li:hover {
   letter-spacing: 0.25em;
   transition: all ease 500ms;
 }
-header h1 {
+header div {
   display: block;
   text-align: center;
+  margin-bottom: -1em;
+}
+header h1 {
+  display: inline-block;
+  text-align: center;
   font-size: 1.5em;
-  padding: 0.5em 0em 0.5em 0em;
+  padding: 0.5em 0.25em;
   line-height: 1.5em;
+}
+header img {
+  display: inline-block;
+  margin: 0 auto -2em auto;
+  width: 4%;
+  padding: 0.5em;
 }
 header p {
   float: right;
@@ -83,8 +94,16 @@ main {
         img:nth-child(3) {
             padding-bottom: 2.5em;
         }
-    }*/
-  /*.image-container {
+    }
+    
+    div#casestudyfirstrow, div#casestudysecondrow {
+        background-color: @greyColor4;
+        img {
+            padding: .5em 1em;
+        }
+    }
+
+    .image-container {
         cursor: pointer;
       }
       
@@ -137,6 +156,7 @@ main a:hover {
 }
 main .button {
   width: 60%;
+  border-radius: 3px;
   /*position: relative;
         z-index: 100;
         display: block;
@@ -370,14 +390,6 @@ main section.imgleft p {
 main section.imgleft .leftpostcard {
   transition: transform 300ms;
 }
-main div#casestudyfirstrow,
-main div#casestudysecondrow {
-  background-color: #b9b9b9;
-}
-main div#casestudyfirstrow img,
-main div#casestudysecondrow img {
-  padding: 1em 2em 1em 2em;
-}
 main #work {
   background-color: #fff9ee;
   border: solid 5px #fff0d5;
@@ -387,6 +399,9 @@ main #work {
 }
 main .casestudy {
   background-color: #d7d7d7;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 80%;
   height: 390px;
   position: relative;
@@ -415,12 +430,15 @@ main .study-content {
 }
 main .study-content .casestudytitle {
   font-size: 1.25em;
+  font-weight: bold;
   padding-top: 0em;
   padding-bottom: 0.75em;
   border-bottom: solid 2px #FFFFFF;
 }
 main .study-content .casestudytitle em {
   font-size: 0.65em;
+  font-weight: normal;
+  font-style: italic;
 }
 main .study-content p {
   padding-top: 0.75em;
@@ -439,13 +457,14 @@ main .casestudy:hover .study-visual {
   opacity: 0;
   transition: all ease 500ms;
 }
-main div#casestudyfirstrow {
+main div#casestudyfirstrow,
+main div#casestudysecondrow {
   padding-top: 1em;
   background-color: #fff9ee;
 }
-main div#casestudysecondrow {
-  padding-bottom: 1em;
-  background-color: #fff9ee;
+main div#casestudyfirstrow img,
+main div#casestudysecondrow img {
+  width: 85%;
 }
 main section.needcreative {
   background-image: url(../images/pinkpaint_creative_bg.svg);
@@ -662,6 +681,10 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     left: 575px;
     top: -140px;
     z-index: 1;
+  }
+  main div#casestudyfirstrow img,
+  main div#casestudysecondrow img {
+    width: 55%;
   }
   main section.needcreative {
     padding-top: 2.5em;
@@ -1021,6 +1044,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     margin-left: 1em;
     margin-right: 1em;
     top: 0;
+    border-radius: 10px;
   }
   main .study-content .button:hover {
     background-color: #b9b9b9;
@@ -1035,7 +1059,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
   }
   main div#casestudyfirstrow img,
   main div#casestudysecondrow img {
-    width: 65%;
+    width: 75%;
   }
   main div#casestudyfirstrow .study-content,
   main div#casestudysecondrow .study-content {

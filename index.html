@@ -8,6 +8,7 @@
     <meta name="author" content="mara peasley">
     
     <title>Mara Peasley</title>
+    <link rel="icon" type="image/x-icon" href="images/signature_ico_spaced.ico">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +38,11 @@
 
 <body>
     <header id="home">
-        <h1>Mara Peasley</h1>
+        <div>
+            <h1>Mara</h1>
+            <img src="images/signature.svg">
+            <h1>Peasley</h1>
+        </div>
 
         <ul>
             <li><a href="#work">work</a></li>
@@ -51,9 +56,9 @@
         Still need to figure out how to overlap polaroid to the left with scribble graphics to the right -->
         <section class="herosection">
             <!-- <img src="images/hero_bggrey_w_polariod.svg" alt="polaroid photo graphic"> -->
-            <img id="heropolaroid" src="images/polaroid_graphic.png" alt="polaroid graphic">
+            <img id="heropolaroid" src="images/hero_polaroid_brown.svg" alt="polaroid graphic">
             <div>
-                <img id="namescribble" src="images/scribble_name.png" alt="scribble name placeholder">
+                <img id="namescribble" src="images/meetyou_text.svg" alt="scribble name placeholder">
                 <!-- <img id="underlinescribble" class="desktop" src="images/scribble_underline.png" alt=" "> -->
                 <h2>My name would be hand written above.
                 <br>A few simple statements. I'm very cool.</h2>
@@ -69,8 +74,8 @@
             Again, figuring out how to overlay scribbles over graphic without creating a whole new graphic
         -->
         <section class="imgleft">
-            <img class="mobile" src="images/postcard_graphic_skew.svg" alt="postcard graphic">
-            <img class="desktop leftpostcard" src="images/postcard_graphic.png" alt="postcard graphic">
+            <img class="mobile" src="images/postcard_kiki_skew.png" alt="postcard graphic">
+            <img class="desktop leftpostcard" src="images/postcard_kiki_flying.png" alt="postcard graphic">
 
             <div>
                 <h3>Some about me text. A few simple statements. I'm very cool.</h3>
@@ -92,121 +97,94 @@
         
         <!-- CASE STUDY DIVS
             These will be in a grid view, 2x3
-            Haven't decided to add a view more button yet for more than 6 studies.
 
-            onmouseenter="this.src='images/case_study_description.svg'" onmouseleave="this.src='images/case_study_card_graphic.png' "
-        -->
+        BELOW ARE THE TWO ROWS OF THE 3 CARD CASE STUDIES-->
+        
         <section id="work">
         <div id="casestudyfirstrow" class="section group">
-            <!--
-                WOULD LOVE TO USE AT A LATER DATE 
-            <div class="plant">
-                <div class="plant-content">
-                    <h4>Case Study<br><em>mobile app</em></h4>
-                    <p>Case Study Description<br>
-                    Wow this is where the description would go and it would tell you all about the study without the graphic in the background. So good oh my goodness wow.</p>
-                    <button>full case</button>
-                </div>
-                <div class="plant-visual">
-                    <img src="images/case_study_card_graphic.png">
-                </div>
-            </div>
-
-            <div class="col span_4_of_12 image-container">
-                <img class="image frontimage" src="images/case_study_card_info.png" alt="case study graphic overlay">
-                <img class="image behindimage" src="images/case_study_card_graphic.png" style="position: relative; top: -430px;" alt="case study graphic overlay">
-            </div>
-
-            <img class="col span_4_of_12" onclick="this.src" src="images/case_study_card_graphic.png" alt="case study graphic overlay">
-            <img class="col span_4_of_12" src="images/case_study_card_graphic.png" alt="case study graphic overlay">
-            <img class="col span_4_of_12" src="images/case_study_card_graphic.png" alt="case study graphic overlay">
-
-            Right now I'm working on simplifying and getting this done.
-
-            BELOW ARE THE TWO ROWS OF THE 3 CARD CASE STUDIES
-            -->
-
-            <div class="casestudy">
+            
+            <div class="casestudy" style="background-color: #00870060; background-image: url(images/bikes_bg.png);">
                 <div class="study-content">
-                    <p class="casestudytitle">Case Study<br><em>mobile app</em></p>
+                    <p class="casestudytitle">Bikes for Humanity<br><em>website redesign</em></p>
                     <p>Case Study Description<br>
                     Wow this is where the description would go and it would tell you all about the study without the graphic in the background. So good oh my goodness wow.</p>
-                    <a class="button" href="case_study.html">full case</a>
+                    <a class="button" href="case_study_b4h.html" style="background-color: #008700;">full case</a>
                 </div>
                 <div class="study-visual">
-                    <img src="images/case_study_oval.svg">
+                    <img src="images/b4h_phone.png">
                 </div>
             </div>
-            <a class="mobile button" href="case_study.html">full case</a>
+            <a class="mobile button" href="case_study_b4h.html" style="background-color: #008700;">full case</a>
 
-            <div class="casestudy">
+            <div class="casestudy" style="background-color: rgba(158, 220, 207, 0.432); background-image: url(images/inone_bg.png);">
+                <!-- #9edccfff-->
                 <div class="study-content">
-                    <p class="casestudytitle">Case Study<br><em>mobile app</em></p>
+                    <p class="casestudytitle">InONE<br><em>travel planning app</em></p>
                     <p>Case Study Description<br>
                     Wow this is where the description would go and it would tell you all about the study without the graphic in the background. So good oh my goodness wow.</p>
-                    <a class="button" href="case_study.html">full case</a>
+                    <a class="button" href="case_study_template.html" style="background-color: rgb(0, 138, 143);">full case</a>
                 </div>
                 <div class="study-visual">
-                    <img src="images/case_study_oval.svg">
+                    <img src="images/inone_phone.png">
                 </div>
             </div>
-            <a class="mobile button" href="case_study.html">full case</a>
+            <a class="mobile button" href="case_study_template.html" style="background-color: rgb(0, 138, 143);">full case</a>
 
-            <div class="casestudy">
+            <div class="casestudy" style="background-color: #89725771; background-image: url(images/wheat_bg.png);">
                 <div class="study-content">
-                    <p class="casestudytitle">Case Study<br><em>mobile app</em></p>
+                    <p class="casestudytitle">Revolution<br><em>hormone tracking app</em></p>
                     <p>Case Study Description<br>
                     Wow this is where the description would go and it would tell you all about the study without the graphic in the background. So good oh my goodness wow.</p>
-                    <a class="button" href="case_study.html">full case</a>
+                    <a class="button" href="case_study_template.html" style="background-color: #897257;">full case</a>
                 </div>
                 <div class="study-visual">
-                    <img src="images/case_study_oval.svg">
+                    <img src="images/revolution_phone.png">
                 </div>
             </div>
-            <a class="mobile button" href="case_study.html">full case</a>
+            <a class="mobile button" href="case_study_template.html" style="background-color: #897257;">full case</a>
             
         </div>
             
         <!-- SECOND ROW OF CASE STUDIES -->
         <div id="casestudysecondrow" class="section group">
-            <div class="casestudy">
+            <div class="casestudy" style="background-color: #fdcd4967; background-image: url(images/beautifulminds_bg.png);">
                 <div class="study-content">
-                    <p class="casestudytitle">Case Study<br><em>mobile app</em></p>
+                    <p class="casestudytitle">Beautiful Minds<br><em>website design</em></p>
                     <p>Case Study Description<br>
                     Wow this is where the description would go and it would tell you all about the study without the graphic in the background. So good oh my goodness wow.</p>
-                    <a class="button" href="case_study.html">full case</a>
+                    <a class="button" href="case_study_template.html" style="background-color: #9d7f2b;">full case</a>
                 </div>
                 <div class="study-visual">
-                    <img src="images/case_study_oval.svg">
+                    <img src="images/beautifulminds_phone.png">
                 </div>
             </div>
-            <a class="mobile button" href="case_study.html">full case</a>
+            <a class="mobile button" href="case_study_template.html" style="background-color: #9d7f2b;">full case</a>
 
-            <div class="casestudy">
+            <div class="casestudy" style="background-color: #c2317a71; background-image: url(images/whathappensnext_bg.png);">
                 <div class="study-content">
-                    <p class="casestudytitle">Case Study<br><em>mobile app</em></p>
+                    <p class="casestudytitle" style="font-size: 1em;">What Happen's Next?<br><em>multimedia story</em></p>
                     <p>Case Study Description<br>
                     Wow this is where the description would go and it would tell you all about the study without the graphic in the background. So good oh my goodness wow.</p>
-                    <a class="button" href="case_study.html">full case</a>
+                    <a class="button" href="case_study_template.html" style="background-color: rgb(189, 45, 117);">full case</a>
                 </div>
                 <div class="study-visual">
-                    <img src="images/case_study_oval.svg">
+                    <img src="images/whathappensnext_phone.png">
                 </div>
             </div>
-            <a class="mobile button" href="case_study.html">full case</a>
+            <a class="mobile button" href="case_study_template.html" style="background-color: rgb(189, 45, 117);">full case</a>
 
-            <div class="casestudy">
+            <div class="casestudy" style="background-color: #bfb3c863; background-image: url(images/amethyst_bg.png);">
                 <div class="study-content">
-                    <p class="casestudytitle">Case Study<br><em>mobile app</em></p>
+                    <p class="casestudytitle">Twisted Stones<br><em>website design</em></p>
                     <p>Case Study Description<br>
                     Wow this is where the description would go and it would tell you all about the study without the graphic in the background. So good oh my goodness wow.</p>
-                    <a class="button" href="case_study.html">full case</a>
+                    <a class="button" href="case_study_template.html" style="background-color: #73657d;">full case</a>
                 </div>
                 <div class="study-visual">
-                    <img src="images/case_study_oval.svg">
+                    <img src="images/stones_phone.png">
                 </div>
             </div>
-            <a class="mobile button" href="case_study.html">full case</a>
+            <a class="mobile button" href="case_study_template.html" style="background-color: #73657d;">full case</a>
         </div>
         </section>
         
@@ -233,7 +211,7 @@
         <section class="needcreative">
             <h4>Need something <br>creative?</h4>
             <a class="button" href="mailto: mara.peasley@protonmail.com">hit me up</a>
-            <p>Or keep this tab open along side the other 30 tabs to come back to later.</p>
+            <p>Or keep this tab open forever, you'll come back to it later... right?</p>
         </section>
 
     </main>
