@@ -1,0 +1,1189 @@
+/*
+
+File Name: style.less
+Date: 09/15/22
+Programmer: Mara Peasley
+
+*/
+
+@import 'palette.less';
+@import 'mixins.less';
+
+
+/* MOBILE STYLESHEET */
+
+header {
+    ul {
+        display: inline-block;
+        padding-bottom: .25em;
+        font-size: .85em;
+    }
+
+    li {
+        float: left;
+        display: block;
+        text-align: center;
+        padding-left: 1em;
+        text-transform: uppercase;
+        font-family: 'Inter', sans-serif;
+        transition: all ease 500ms;
+        &:hover {
+            //font-style: italic;
+            letter-spacing: .25em;
+            //transform: rotate(-5deg);
+            transition: all ease 500ms;
+        }
+    }
+
+    h1 {
+        display: block;
+        text-align: center;
+        font-size: 1.5em;
+        padding: .5em 0em .5em 0em;
+        line-height: 1.5em;
+    }
+
+    p {
+        float: right;
+        padding-right: 1em;
+        text-transform: uppercase;
+        font-family: 'Inter', sans-serif;
+        font-size: .85em;
+        transition: all ease 500ms;
+        &:hover {
+            //font-style: italic;
+            letter-spacing: .2em;
+            //transform: rotate(5deg);
+            transition: all ease 500ms;
+        }
+    }
+}
+
+main {
+    background-color: @color5;
+    a {
+        position: relative;
+        z-index: 100;
+        display: block;
+        margin: 2em auto 8em auto;
+        width: 60%;
+        font-family: 'Inter', sans-serif;
+        color: @lightColor;
+        background-color: @greyColor6;
+        text-align: center;
+        padding: .25em;
+        transition: ease 300ms;
+        &:hover {
+            color: @darkColor;
+            background-color: @greyColor2;
+            transition: ease 400ms;
+        }
+    }
+    .button {
+        width: 60%;
+        /*position: relative;
+        z-index: 100;
+        display: block;
+        margin: 2em auto 8em auto;
+        width: 60%;
+        height: 35px;
+        font-family: 'Inter', sans-serif;
+        color: @lightColor;
+        background-color: @greyColor6;
+        border: none;
+        cursor: pointer;
+        a {
+            color: @lightColor;
+        }
+        a:visited {
+            color: @lightColor;
+        }*/
+    }
+    .pagebreak {
+        position: relative;
+        top: 10px;
+        width: 100%;
+        //scale: 1.1;
+    }
+    section.herosection {
+        //background-image: url("../images/pinkheader_long_bg.svg");
+        background-image: url(../images/pinkpaint_bg.svg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: @color3;
+        margin-bottom: -.75em;
+        img {
+            width: 67%;
+        }
+        img#heropolaroid {
+            position: relative;
+            left: -10px;
+            transform: rotate(-9deg);
+            box-shadow: 0px 10px 10px rgba(107, 76, 72, .25);
+            transition: transform 300ms;
+        }
+        div {
+            position: absolute;
+            top: 280px;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            background-color: #fffdfa;
+            box-shadow: 0px 10px 10px rgba(107, 76, 72, .25);
+            border-radius: 3px;
+            padding: .5em;
+            img {
+                width: 100%;
+            }
+            h2 {
+                font-size: .75em;
+            }
+            p {
+                font-size: .5em;
+            }
+        }
+    }
+    section.summaryheader {
+        background-image: url(../images/bluepaint_bg2.svg);
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: @color4;
+        padding-bottom: 2em;
+        margin-bottom: 16em;
+        h2 {
+            padding: 1.5em 0 0 1em;
+            font-size: 1em;
+        }
+        p {
+            font-size: .75em;
+            padding: 1.75em 0 1em 2em;
+            width: 60%;
+            font-family: 'Inter', sans-serif;
+        }
+        img {
+            position: absolute;
+            top: 117px;
+            right: -320px;
+            transform: rotate(5deg);
+            scale: 1.25;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, .1);
+            transition: transform 300ms;
+        }
+        div.detailscard {
+            //background-image: url(../images/yellowpostit.svg);
+            //background-size: contain;
+            //background-repeat: no-repeat;
+            background-color: @color5;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, .1);
+            width: 75%;
+            //margin: 1.5em auto;
+            padding: 1em 1.5em;
+            position: absolute;
+            left: 73px;
+            transition: transform 300ms;
+            //top: 408px;
+            h5 {
+                text-transform: uppercase;
+                font-family: 'Inter', sans-serif;
+            }
+            p {
+                padding: .25em 0 2em 0;
+            }
+            ul {
+                font-family: 'Inter', sans-serif;
+                display: inline-block;
+                list-style-type: disc;
+                padding-left: 1em;
+                font-size: .75em;
+            }
+        }
+    }
+    section.imgcenter {
+        margin-top: 4em;
+        h3 {
+            width: 85%;
+            margin: 0 auto;
+            font-size: 1em;
+        }
+        p {
+            font-size: .75em;
+            width: 85%;
+            margin: 1em auto 1em 2em;
+            font-family: 'Inter', sans-serif;
+        }
+        img {
+            width: 85%;
+            margin: 0 auto 2em auto;
+            display: block;
+        }
+    }
+    section.commentsection {
+        font-family: 'Inter', sans-serif;
+        margin: 5em auto;
+        text-align: center;
+        q {
+            display: block;
+            width: 85%;
+            margin: auto;
+            text-align: center;
+            padding-top: 1em;
+        }
+        p {
+            font-size: .75em;
+            opacity: .5;
+            padding-top: 1em;
+        }
+        div {
+            height: 4px;
+            background: @greyColor3;
+            width: 30%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            opacity: .25;
+        }
+        /*q::before {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5em;
+            content: open-quote;
+        }
+        q::after {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5em;
+            content: close-quote;
+        }*/
+    }
+
+    section.polaroidright {
+        margin-bottom: -200px;
+        margin-top: -.5em;
+        clear: both;
+        overflow: hidden;
+        background-color: @color4;
+        //color: @lightColor;
+        img {
+            width: 80%;
+            margin: 1em;
+            position: relative;
+            right: -65px;
+        }
+        h3 {
+            padding: 2.25em 0 0 1em;
+            font-size: 1.25em;
+            line-height: 1.5em;
+        }
+        p {
+            font-family: 'Inter', sans-serif;
+            font-size: .75em;
+            padding: 1.75em 0 0 1em;
+        }
+    }
+    img.backpolaroid {
+        transform: rotate(8deg);
+        right: 0;
+        left: 0;
+        top: 20px;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, .15);
+        transition: transform 300ms, z-index 1ms step-end;
+    }
+    img.frontpolaroid {
+        transform: rotate(-9deg);
+        top: -215px;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, .15);
+        transition: transform 300ms;
+    }
+
+    section.imgleft {
+        background-image: url(../images/yellowpaint_bg.svg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 0 0 1em 0;
+        clear: both;
+        img {
+            width: 50%;
+            float: right;
+            margin: .75em 0 0 .5em;
+        }
+        h3 {
+            padding: 2.25em 0 0 1em;
+            font-size: 1.25em;
+            line-height: 1.5em;
+        }
+        p {
+            font-family: 'Inter', sans-serif;
+            font-size: .75em;
+            padding: 1.75em 0 0 1em;
+        }
+        .leftpostcard {
+            transition: transform 300ms;
+        }
+    }
+
+    /*
+        Need to make the Case Study Boxes in code
+        This mainly includes the hover effect box rather than the main img
+
+        After that we need to make the final client section
+        As well as the footer
+
+        Then moving onto the case study page, Yay!
+        */
+    /*div#casestudyfirstrow {
+        margin: auto;
+        width: 85%;
+        img:first-child {
+            padding-top: 2.5em;
+        }
+    }
+    div#casestudysecondrow {
+        img:nth-child(3) {
+            padding-bottom: 2.5em;
+        }
+    }*/
+    
+    div#casestudyfirstrow, div#casestudysecondrow {
+        background-color: @greyColor4;
+        img {
+            padding: 1em 2em 1em 2em;
+        }
+    }
+
+    /*.image-container {
+        cursor: pointer;
+      }
+      
+      .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.5s ease;
+      }
+      
+      .image-container.active .behindimage {
+        opacity: 0;
+      }
+      
+      .image-container.active .frontimage {
+        opacity: 1;
+      }*/
+      
+
+    /*
+    <div class="plant">
+        <div class="plant-content">
+            <h2>Awesome Project</h2>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </div>
+        <div class="plant-visual">
+            <img src="images/case_study_oval.svg" alt=" ">
+        </div>
+    </div>
+    */
+    #work {
+        background-color: @color1;
+        border: solid 5px @darkColor1;
+        box-shadow: 0px 10px 10px rgba(107, 76, 72, .15);
+        padding-top: 1px;
+        margin: 2em .5em 0 .75em;
+    }
+    .casestudy {
+        background-color: @greyColor3;
+        width: 80%;
+        height: 390px;
+        position: relative;
+        margin: 4em auto 0 auto;
+        display: block;
+    }
+    .study-content {
+        width: 100%;
+        opacity: 1;
+        height: 10px;
+        transition: all ease 500ms;
+    }
+    .study-visual {
+        margin: -2em auto;
+        text-align: center;
+        img {
+            margin-top: -2em;
+        }
+    }
+    .study-content {
+        position: absolute;
+        opacity: 0;
+        transition: all ease 200ms;
+        font-family: 'Inter', sans-serif;
+        padding: 1.5em;
+        .casestudytitle {
+            font-size: 1.25em;
+            padding-top: 0em;
+            padding-bottom: .75em;
+            border-bottom: solid 2px @lightColor;
+            em {
+                font-size: .65em;
+            }
+        }
+        p {
+            padding-top: .75em;
+            font-size: .85em;
+        }
+        button {
+            border: none;
+            background-color: @greyColor6;
+            color: @lightColor;
+        }
+    }
+    .casestudy:hover .study-content {
+        opacity: 1;
+        transition: all ease 500ms;
+    }
+    .casestudy:hover .study-visual {
+        opacity: 0;
+        transition: all ease 500ms;
+        //transform: scale(.5);
+        //transform-origin: center center;
+    }
+    div#casestudyfirstrow {
+        padding-top: 1em;
+        background-color: @color1;
+    }
+    div#casestudysecondrow {
+        padding-bottom: 1em;
+        background-color: @color1;
+    }
+
+    section.needcreative {
+        background-image: url(../images/pinkpaint_creative_bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: @color1;
+        margin-top: -.5em;
+        h4 {
+            text-align: center;
+            padding: 1em;
+            font-size: 1.5em;
+            line-height: 1.35em;
+        }
+        a {
+            display: block;
+            margin: 0 auto;
+            width: 60%;
+            background-color: @greyColor6;
+            color: @lightColor;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            padding: .5em;
+            transition: ease 400ms;
+            &:hover {
+                background-color: @darkColor;
+                transition: ease 500ms;
+            }
+        }
+        p {
+            font-size: .65em;
+            width: 75%;
+            margin: 1em auto 0 auto;
+            padding: 1em;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+        }
+    }
+
+    .tile {
+        -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
+        transform: translateY(50px) rotate(-5deg) translateZ(0);
+        -webkit-transition-delay: .5s;
+        -o-transition-delay: .5s;
+        transition-delay: .5s;
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s;
+        opacity: 0;
+    }
+    .inView {
+        opacity: 1;
+        -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+        transform: translateY(0px) rotate(0deg) translateZ(0);
+    }
+
+}   
+
+footer {
+    ul {
+        border-top: solid 4px @greyColor3;
+        margin: 4em 1em 0 1em;
+        text-align: center;
+        padding-top: 1.25em;
+        font-size: .85em;
+        li {
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 0 1em 1em 1em;
+        }
+    }
+   #copy {
+    font-size: .75em;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    //background-color: @darkColor1;
+    background-image: url(../images/whitepaper_footer.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: @greyColor6;
+    padding: .5em 0;
+   }
+}
+
+.desktop {
+    display: none;
+}
+.mobile {
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: @darkColor;
+}
+
+body {
+    //sets default font for the page
+    font-family: "Playfair Display", serif;
+    //sets default size for all font at 1em
+    font-size: 18px;
+    line-height: 1.5em;
+    background-color: @color1;
+    color: @darkColor;
+}
+
+/*
+
+TABLET STYLESHEET
+
+The following CSS affects all screen sizes larger than 480 pixels wide.
+
+*/
+
+@media only screen and (min-width: 481px) {
+
+    header {
+        ul {
+            padding-left: 3em;
+        }
+        p {
+            padding-right: 3em;
+        }
+    }
+
+    main {
+        a {
+            width: 50%;
+        }
+        .button {
+            width: 50%;
+        }
+        .pagebreak {
+            top: 30px;
+        }
+        section.herosection {
+            img {
+                width: 52%;
+                padding: 1em;
+            }
+            img#heropolaroid {
+                box-shadow: none;
+            }
+            div {
+                //top: 55%;
+                top: 300px;
+                left: 68%;
+                padding: 1.5em;
+            }
+        }
+        section.summaryheader {
+            padding-bottom: 5em;
+            margin-bottom: 14em;
+            img {
+                top: 224px;
+                right: -325px;
+                scale: 1.5;
+            }
+            h2 {
+                font-size: 1.5em;
+                padding-left: .5em;
+                line-height: 1.5em;
+            }
+            p {
+                font-size: .85em;
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+            div {
+                margin: 0 auto 0 5em;
+                width: 80%;
+                overflow: visible;
+            }
+            div.detailscard {
+                width: 35%;
+                top: 390px;
+                left: 20px;
+            }
+        }
+        section.imgcenter {
+            h3 {
+                font-size: 1.5em;
+                padding-left: .5em;
+                padding-right: 4em;
+                line-height: 1.5em;
+                margin-bottom: 1em;
+            }
+            p {
+                font-size: .85em;
+                padding-left: 3em;
+                padding-right: 4em;
+                margin-bottom: 2em;
+            }
+            div {
+                margin: 0 auto 0 5em;
+                width: 80%;
+                overflow: visible;
+            }
+        }
+        section.commentsection {
+            q {
+                width: 70%;
+                font-size: 1.25em;
+            }
+        }
+
+        section.imgleft {
+            img {
+                width: 35%;
+            }
+            div {
+                padding-left: 3em;
+            }
+        }
+        .casestudy {
+            width: 55%;
+        }
+        section.polaroidright {
+            padding-top: 2em;
+            margin-top: -2.5em;
+            margin-bottom: -305px;
+            img {
+                width: 35%;
+            }
+            h3 {
+                padding-left: 3em;
+                width: 50%;
+            }
+            p {
+                padding-left: 4em;
+                width: 50%;
+            }
+            div {
+                padding-top: 1em;
+            }
+            .frontpolaroid {
+                right: -112px;
+                z-index: 1;
+            }
+            .backpolaroid {
+                left: 575px;
+                top: -140px;
+                z-index: 1;
+            }
+        }
+        section.needcreative {
+            padding-top: 2.5em;
+            p {
+                font-size: .65em;
+                font-family: 'Inter', sans-serif;
+                text-align: center;
+                margin-top: 0;
+            }
+        }
+    }
+
+    footer {
+        ul {
+            margin: 4em 5em 0 5em;
+        }
+        .mobile {
+            display: inline-block;
+        }
+        #copy {
+            background-image: none;
+        }
+    }
+}
+
+/*
+
+DESKTOP STYLESHEET
+
+The following CSS affects all screen sizes larger than 1024 pixels wide.
+
+*/
+
+@media only screen and (min-width: 1025px) {
+    header {
+        padding-bottom: .15em;
+        h1 {
+            padding-bottom: 0;
+        }
+    }
+
+    main {
+        .pagebreak {
+            top: 36px;
+        }
+        section.herosection {
+            background-image: url(../images/pinkpaint_long_bg.svg);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            img {
+                width: 34%;
+            }
+            div {
+                top: 380px;
+                img {
+                    position: absolute;
+                    top: -120px;
+                }
+            }
+            img#heropolaroid {
+                left: 170px;
+            }
+        }
+
+        section.summaryheader {
+            background-image: url(../images/bluepaint_bg.svg);
+            img {
+                top: 190px;
+                right: -145px;
+                scale: 1.35;
+            }
+            div.detailscard {
+                width: 30%;
+                top: 380px;
+                left: 15px;
+            }
+        }
+        section.imgcenter {
+            div {
+                width: 80%;
+            }
+        }
+        
+        section.commentsection {
+            q {
+                width: 50%;
+                font-size: 1.25em;
+                line-height: 1.5em;
+            }
+            img {
+                width: 6%;
+            }
+        }
+
+        section.imgleft {
+            position: relative;
+            //overflow: hidden;
+            img {
+                width: 45%;
+                position: absolute;
+                top: 115px;
+                right: -180px;
+                transform: rotate(5deg);
+                margin-top: -3.5em;
+            }
+            h3 {
+                font-size: 1.5em;
+                padding-left: .5em;
+                line-height: 1.5em;
+            }
+            p {
+                font-size: .85em;
+            }
+            div {
+                margin: 0 auto 0 10em;
+                width: 50%;
+            }
+        }
+        section.polaroidright {
+            overflow: visible;
+            margin-bottom: -390px;
+            img {
+                width: 30%;
+            }
+            .backpolaroid {
+                top: -210px;
+                left: 670px;
+            }
+            .frontpolaroid {
+                top: -330px;
+                right: -212px;
+            }
+            div {
+                width: 75%;
+                margin: 0 auto 0 9em;
+            }
+            h3 {
+                font-size: 1.5em;
+                line-height: 1.5em;
+                padding-left: 1em;
+            }
+            p {
+                font-size: .85em;
+                padding-left: 2em;
+            }
+        }
+        .section {
+            margin: 0;
+        }
+        section#work {
+            margin-left: 8em;
+            margin-right: 8em;
+        }
+        div#casestudysecondrow {
+            margin-bottom: 3em;
+        }
+        section.needcreative {
+            margin-bottom: 2em;
+            h4 {
+                font-size: 2em;
+                padding-top: 2em;
+            }
+            p {
+                margin-top: 1em;
+            }
+            a {
+                width: 35%;
+            }
+        }
+    }
+    footer {
+        //background-color: @greyColor2;
+        //background-image: url(../images/yellowpaper_pagebreak_upward.svg);
+        //background-repeat: no-repeat;
+        //background-position: bottom;
+        border-top: solid 5px @greyColor3;
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: space-between;
+        display: flex;
+        ul {
+            display: inline-block;
+            text-align: left;
+            border: none;
+            margin: 0;
+            li {
+                padding-left: 0;
+            }
+            .mobile {
+                display: none;
+            }
+        }
+        #copy {
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            //background-color: @greyColor2;
+            margin: 1em;
+            background-image: none;
+            //margin-left: 15em;
+            //margin-right: 18em;
+
+        }
+        p {
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            font-size: .85em;
+            margin: 1.25em;
+        }
+    }
+    .desktop {
+        display: inline-block;
+    }
+    .mobile {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+    header {
+        padding: .5em 2em 0 2em;
+        ul {
+            font-size: 1em;
+            li {
+                padding-left: 3em;
+            }
+        }
+        p {
+            font-size: 1em;
+            padding-right: 3em;
+        }
+    }
+
+    main {
+        img {
+            width: 100%;
+        }
+        .pagebreak {
+            top: 60px;
+        }
+        section.herosection {
+            img {
+                width: 25%;
+            }
+            img#namescribble {
+                position: absolute;
+                top: -176px;
+                left: 30px;
+                scale: 1.5;
+                width: 90%;
+            }
+            img#heropolaroid {
+                top: -20px;
+                left: 380px;
+            }
+            img#underlinescribble {
+                position: absolute;
+                right: -30px;
+                top: 100px;
+                scale: 2;
+            }
+            div {
+                top: 456px;
+                left: 60%;
+                text-align: left;
+                width: 30%;
+                font-size: 1.5em;
+            }
+        }
+
+        section.summaryheader {
+            overflow: hidden;
+            margin-bottom: 20em;
+            img {
+                right: -330px;
+                top: -120px;
+                scale: .43;
+            }
+            div {
+                width: 75%;
+            }
+            h2 {
+                font-size: 2em;
+                padding-left: 5.5em;
+            }
+            p {
+                padding-left: 13em;
+                padding-right: 8em;
+            }
+            div.detailscard {
+                width: 17%;
+                left: 200px;
+                top: 450px;
+                padding: 1.75em 2.5em;
+            }
+        }
+        section.imgcenter {
+            
+            div {
+                width: 65%;
+                margin: 0 auto 8em auto;
+            }
+            h3 {
+                font-size: 2em;
+            }
+            p {
+                padding-left: 5em;
+                padding-right: 14em;
+            }
+        }
+        section.commentsection {
+            margin-bottom: 10em;
+        }
+
+        section.imgleft {
+            background-position: left;
+            img {
+                width: 32%;
+                position: absolute;
+                top: 0;
+                right: 74px;
+                transform: rotate(5deg);
+                margin-top: -3.5em;
+            }
+            h3 {
+                font-size: 1.5em;
+                padding-left: .5em;
+                line-height: 1.5em;
+            }
+            p {
+                font-size: .85em;
+            }
+            div {
+                margin: 0 auto 0 15em;
+                width: 43%;
+            }
+        }
+        section.polaroidright {
+            overflow: visible;
+            margin-top: -1em;
+            img {
+                width: 20%;
+            }
+            div {
+                width: 75%;
+                margin: 0 auto 0 15em;
+            }
+            h3 {
+                font-size: 1.5em;
+                line-height: 1.5em;
+                padding-left: 1em;
+            }
+            p {
+                font-size: .85em;
+                padding-left: 2em;
+            }
+            .backpolaroid {
+                left: 1020px;
+                top: -280px;
+            }
+            .frontpolaroid {
+                left: 900px;
+                top: -175px;
+
+            }
+        }
+        section#work {
+            background-image: url(../images/paper_texture_45p.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            padding-bottom: 4em;
+            padding-top: 3em;
+            box-shadow: 0px 10px 10px rgba(107, 76, 72, .15);
+        }        
+        .casestudy {
+            width: 28%;
+            display: inline-block;
+            margin-bottom: 0em;
+            margin-left: 1em;
+            margin-right: 1em;
+            top: 0;
+        }
+        .study-content {
+            .button:hover {
+                background-color: @greyColor4;
+                cursor: pointer;
+            }
+        }
+        div#casestudyfirstrow, div#casestudysecondrow {
+            width: 85%;
+            margin: auto;
+            padding: 0 1.5em;
+            text-align: center;
+            img {
+                width: 65%;
+            }
+            .study-content {
+                text-align: left;
+            }
+        }
+        div#casestudyfirstrow {
+            border-radius: 10px 10px 0 0;
+        }
+        div#casestudysecondrow {
+            border-radius: 0 0 10px 10px;
+            padding-bottom: 3em;
+        }
+        /*.study-visual {
+            //position: inherit;
+            //top: 0;
+            //left: 0;
+            //transition: none;
+            //margin: -5em auto 0 auto;
+            //text-align: center;
+            //width: 35%;
+        }*/
+        section.needcreative {
+            margin-top: -1em;
+            margin-bottom: 3em;
+            .button {
+                width: 20%;
+                height: 45px;
+            }
+            h4 {
+                font-size: 2.5em;
+                padding-top: 2em;
+            }
+            p {
+                margin-top: 1em;
+            }
+        }
+    }
+
+    footer {
+        border-top: solid 5px @greyColor3;
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: space-between;
+        display: flex;
+        ul {
+            display: inline-block;
+            text-align: left;
+            border: none;
+            margin: 0;
+            li {
+                padding-right: 2em;
+            }
+            .mobile {
+                display: none;
+            }
+        }
+        #copy {
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            margin: 1em;
+            //margin-left: 15em;
+            //margin-right: 18em;
+
+        }
+        p {
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            font-size: .85em;
+            margin: 1.25em;
+        }
+    }
+
+    .desktop {
+        display: inline-block;
+    }
+    .mobile {
+        display: none;
+    }
+
+    
+
+}

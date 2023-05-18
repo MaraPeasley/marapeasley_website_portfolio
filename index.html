@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="mara peasley">
+    
+    <title>Mara Peasley</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Source+Sans+Pro:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    
+<!-- Below are the 4 stylesheets needed to run this website:
+- reset.css clears all formatting for all default css on the site
+- helper.css adds some basic formatting and functionality back
+- grid.css is not currently being used but may be needed if you want to add charts/grids in the future
+- style.css is the output of LESS from the style.less sheet used to format and style the entire site
+- -->
+
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/helper.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <header id="home">
+        <h1>Mara Peasley</h1>
+
+        <ul>
+            <li><a href="#work">work</a></li>
+        </ul>
+        
+        <p><a href="https://www.instagram.com/hey.peas/" target="_blank">instagram</a></p>
+    </header>
+
+    <main>
+        <!-- HERO SECTION
+        Still need to figure out how to overlap polaroid to the left with scribble graphics to the right -->
+        <section class="herosection">
+            <!-- <img src="images/hero_bggrey_w_polariod.svg" alt="polaroid photo graphic"> -->
+            <img id="heropolaroid" src="images/polaroid_graphic.png" alt="polaroid graphic">
+            <div>
+                <img id="namescribble" src="images/scribble_name.png" alt="scribble name placeholder">
+                <!-- <img id="underlinescribble" class="desktop" src="images/scribble_underline.png" alt=" "> -->
+                <h2>My name would be hand written above.
+                <br>A few simple statements. I'm very cool.</h2>
+                <!-- <img src="images/scribble_underline.png" alt="scribble name underline">
+                <p>That's about it but if you want to know more...</p> -->
+            </div>
+        </section>
+
+        <!-- PAGE BREAK -->
+        <img src="images/pinkpaper_pagebreak.svg" alt=" ">        
+
+        <!-- ABOUT SECTION
+            Again, figuring out how to overlay scribbles over graphic without creating a whole new graphic
+        -->
+        <section class="imgleft">
+            <img class="mobile" src="images/postcard_graphic_skew.svg" alt="postcard graphic">
+            <img class="desktop leftpostcard" src="images/postcard_graphic.png" alt="postcard graphic">
+
+            <div>
+                <h3>Some about me text. A few simple statements. I'm very cool.</h3>
+                <p>Still curious?<br>
+                    Wow this is where the description would go and it would tell you all about me and stuff and how I’m an artist and illustrator first and code monkey second. So good oh my goodness wow.</p>
+
+                <p>A little more text because I like having it spaced out but not fully sure what I would put here.</p>
+            </div>
+
+            <!--
+            <img src="images/scribble_middle_right.png" alt=" ">
+
+            <img src="images/scribble_middle_left.png" alt=" ">
+
+            <img src="images/scribble_lower_right.png" alt=" ">
+            -->
+
+        </section>
+        
+        <!-- CASE STUDY DIVS
+            These will be in a grid view, 2x3
+            Haven't decided to add a view more button yet for more than 6 studies.
+
+            onmouseenter="this.src='images/case_study_description.svg'" onmouseleave="this.src='images/case_study_card_graphic.png' "
+        -->
+        <section id="work">
+        <div id="casestudyfirstrow" class="section group">
+            <!--
+                WOULD LOVE TO USE AT A LATER DATE 
+            <div class="plant">
+                <div class="plant-content">
+                    <h4>Case Study<br><em>mobile app</em></h4>
+                    <p>Case Study Description<br>
+                    Wow this is where the description would go and it would tell you all about the study without the graphic in the background. So good oh my goodness wow.</p>
+                    <button>full case</button>
+                </div>
+                <div class="plant-visual">
+                    <img src="images/case_study_card_graphic.png">
+                </div>
+            </div>
+
+            <div class="col span_4_of_12 image-container">
+                <img class="image frontimage" src="images/case_study_card_info.png" alt="case study graphic overlay">
+                <img class="image behindimage" src="images/case_study_card_graphic.png" style="position: relative; top: -430px;" alt="case study graphic overlay">
+            </div>
+
+            <img class="col span_4_of_12" onclick="this.src" src="images/case_study_card_graphic.png" alt="case study graphic overlay">
+            <img class="col span_4_of_12" src="images/case_study_card_graphic.png" alt="case study graphic overlay">
+            <img class="col span_4_of_12" src="images/case_study_card_graphic.png" alt="case study graphic overlay">
+
+            Right now I'm working on simplifying and getting this done.
+
+            BELOW ARE THE TWO ROWS OF THE 3 CARD CASE STUDIES
+            -->
+
+            <div class="casestudy">
+                <div class="study-content">
+                    <p class="casestudytitle">Case Study<br><em>mobile app</em></p>
+                    <p>Case Study Description<br>
+                    Wow this is where the description would go and it would tell you all about the study without the graphic in the background. So good oh my goodness wow.</p>
+                    <a class="button" href="case_study.html">full case</a>
+                </div>
+                <div class="study-visual">
+                    <img src="images/case_study_oval.svg">
+                </div>
+            </div>
+            <a class="mobile button" href="case_study.html">full case</a>
+
+            <div class="casestudy">
+                <div class="study-content">
+                    <p class="casestudytitle">Case Study<br><em>mobile app</em></p>
+                    <p>Case Study Description<br>
+                    Wow this is where the description would go and it would tell you all about the study without the graphic in the background. So good oh my goodness wow.</p>
+                    <a class="button" href="case_study.html">full case</a>
+                </div>
+                <div class="study-visual">
+                    <img src="images/case_study_oval.svg">
+                </div>
+            </div>
+            <a class="mobile button" href="case_study.html">full case</a>
+
+            <div class="casestudy">
+                <div class="study-content">
+                    <p class="casestudytitle">Case Study<br><em>mobile app</em></p>
+                    <p>Case Study Description<br>
+                    Wow this is where the description would go and it would tell you all about the study without the graphic in the background. So good oh my goodness wow.</p>
+                    <a class="button" href="case_study.html">full case</a>
+                </div>
+                <div class="study-visual">
+                    <img src="images/case_study_oval.svg">
+                </div>
+            </div>
+            <a class="mobile button" href="case_study.html">full case</a>
+            
+        </div>
+            
+        <!-- SECOND ROW OF CASE STUDIES -->
+        <div id="casestudysecondrow" class="section group">
+            <div class="casestudy">
+                <div class="study-content">
+                    <p class="casestudytitle">Case Study<br><em>mobile app</em></p>
+                    <p>Case Study Description<br>
+                    Wow this is where the description would go and it would tell you all about the study without the graphic in the background. So good oh my goodness wow.</p>
+                    <a class="button" href="case_study.html">full case</a>
+                </div>
+                <div class="study-visual">
+                    <img src="images/case_study_oval.svg">
+                </div>
+            </div>
+            <a class="mobile button" href="case_study.html">full case</a>
+
+            <div class="casestudy">
+                <div class="study-content">
+                    <p class="casestudytitle">Case Study<br><em>mobile app</em></p>
+                    <p>Case Study Description<br>
+                    Wow this is where the description would go and it would tell you all about the study without the graphic in the background. So good oh my goodness wow.</p>
+                    <a class="button" href="case_study.html">full case</a>
+                </div>
+                <div class="study-visual">
+                    <img src="images/case_study_oval.svg">
+                </div>
+            </div>
+            <a class="mobile button" href="case_study.html">full case</a>
+
+            <div class="casestudy">
+                <div class="study-content">
+                    <p class="casestudytitle">Case Study<br><em>mobile app</em></p>
+                    <p>Case Study Description<br>
+                    Wow this is where the description would go and it would tell you all about the study without the graphic in the background. So good oh my goodness wow.</p>
+                    <a class="button" href="case_study.html">full case</a>
+                </div>
+                <div class="study-visual">
+                    <img src="images/case_study_oval.svg">
+                </div>
+            </div>
+            <a class="mobile button" href="case_study.html">full case</a>
+        </div>
+        </section>
+        
+        <!-- PAGE BREAK -->
+        <img class="pagebreak" src="images/yellowpaper_pagebreak.svg" alt=" ">
+
+        <!-- CLIENT MATCH SECTION
+        -->
+        <section class="polaroidright">
+            <!-- <img src="images/scribble_lower_left.png" alt=" "> -->
+            <div>
+                <h3>Something about the kind of clients I want to work with?</h3>
+                <p>Is this you? / skills Description
+                    Wow this is where the description would go and it would tell you about what kind of skills I have and how I am to work with. So good oh my goodness wow.</p>
+            </div>
+            <!-- <img src="images/scribble_lower_left.png" alt=" "> -->
+            <img class="backpolaroid" src="images/polaroid_graphic.png" alt="polaroid graphic group of 2">
+            <img class="frontpolaroid" src="images/polaroid_graphic.png" alt="polaroid graphic group of 2">
+        </section>
+
+        <!-- PAGE BREAK -->
+        <img class="pagebreak" src="images/bluepaper_pagebreak.svg" alt=" ">
+
+        <section class="needcreative">
+            <h4>Need something <br>creative?</h4>
+            <a class="button" href="mailto: mara.peasley@protonmail.com">hit me up</a>
+            <p>Or keep this tab open along side the other 30 tabs to come back to later.</p>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <ul>
+            <li><a href="#home">Back to Top</a></li>
+            <li><a href="#work">work</a></li>
+            <li class="mobile"><a href="https://www.instagram.com/hey.peas/" target="_blank">instagram</a></li>
+        </ul>
+
+        <p id="copy">&#169; Copyright Mara Elise Peasley 2023</p>
+
+        <p class="desktop"><a href="https://www.instagram.com/hey.peas/" target="_blank">instagram</a></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/case_study_toggle.js"></script>
+    <script src="scripts/img_toggle.js"></script>
+    <script src="scripts/polaroidwiggles.js"></script>
+    <!-- BELOW SCRIPT FROM CODEPEN USER
+        https://codepen.io/bstonedev/pen/MWWZgKz -->
+    <script src="scripts/fadeinscroll.js"></script>
+
+</body>
+</html>

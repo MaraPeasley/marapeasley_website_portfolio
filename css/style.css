@@ -1,0 +1,1104 @@
+/*
+
+File Name: style.less
+Date: 09/15/22
+Programmer: Mara Peasley
+
+*/
+/*Black and White variables*/
+/*Color Palette:
+Source = https://color.adobe.com/create/image
+(custom palette for AAA Web Accessibility)
+*/
+/*Parametric mixin for headings */
+/*End parametric mixin for headings*/
+/*50% transparent*/
+/*text underlined and italicized*/
+/*text uppercase and bold*/
+/*image flip*/
+/*invert colors and serif*/
+/*make it pink*/
+/*sepia photo with shadow*/
+/*green border*/
+/*.topBorder() {
+    border-top: double .5em #000000;
+}*/
+/* MOBILE STYLESHEET */
+header ul {
+  display: inline-block;
+  padding-bottom: 0.25em;
+  font-size: 0.85em;
+}
+header li {
+  float: left;
+  display: block;
+  text-align: center;
+  padding-left: 1em;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  transition: all ease 500ms;
+}
+header li:hover {
+  letter-spacing: 0.25em;
+  transition: all ease 500ms;
+}
+header h1 {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0.5em 0em 0.5em 0em;
+  line-height: 1.5em;
+}
+header p {
+  float: right;
+  padding-right: 1em;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85em;
+  transition: all ease 500ms;
+}
+header p:hover {
+  letter-spacing: 0.2em;
+  transition: all ease 500ms;
+}
+main {
+  background-color: #fae083;
+  /*
+        Need to make the Case Study Boxes in code
+        This mainly includes the hover effect box rather than the main img
+
+        After that we need to make the final client section
+        As well as the footer
+
+        Then moving onto the case study page, Yay!
+        */
+  /*div#casestudyfirstrow {
+        margin: auto;
+        width: 85%;
+        img:first-child {
+            padding-top: 2.5em;
+        }
+    }
+    div#casestudysecondrow {
+        img:nth-child(3) {
+            padding-bottom: 2.5em;
+        }
+    }*/
+  /*.image-container {
+        cursor: pointer;
+      }
+      
+      .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.5s ease;
+      }
+      
+      .image-container.active .behindimage {
+        opacity: 0;
+      }
+      
+      .image-container.active .frontimage {
+        opacity: 1;
+      }*/
+  /*
+    <div class="plant">
+        <div class="plant-content">
+            <h2>Awesome Project</h2>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </div>
+        <div class="plant-visual">
+            <img src="images/case_study_oval.svg" alt=" ">
+        </div>
+    </div>
+    */
+}
+main a {
+  position: relative;
+  z-index: 100;
+  display: block;
+  margin: 2em auto 8em auto;
+  width: 60%;
+  font-family: 'Inter', sans-serif;
+  color: #FFFFFF;
+  background-color: #5a5a5a;
+  text-align: center;
+  padding: 0.25em;
+  transition: ease 300ms;
+}
+main a:hover {
+  color: #000000;
+  background-color: #eeeeee;
+  transition: ease 400ms;
+}
+main .button {
+  width: 60%;
+  /*position: relative;
+        z-index: 100;
+        display: block;
+        margin: 2em auto 8em auto;
+        width: 60%;
+        height: 35px;
+        font-family: 'Inter', sans-serif;
+        color: @lightColor;
+        background-color: @greyColor6;
+        border: none;
+        cursor: pointer;
+        a {
+            color: @lightColor;
+        }
+        a:visited {
+            color: @lightColor;
+        }*/
+}
+main .pagebreak {
+  position: relative;
+  top: 10px;
+  width: 100%;
+}
+main section.herosection {
+  background-image: url(../images/pinkpaint_bg.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ffb4ae;
+  margin-bottom: -0.75em;
+}
+main section.herosection img {
+  width: 67%;
+}
+main section.herosection img#heropolaroid {
+  position: relative;
+  left: -10px;
+  transform: rotate(-9deg);
+  box-shadow: 0px 10px 10px rgba(107, 76, 72, 0.25);
+  transition: transform 300ms;
+}
+main section.herosection div {
+  position: absolute;
+  top: 280px;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background-color: #fffdfa;
+  box-shadow: 0px 10px 10px rgba(107, 76, 72, 0.25);
+  border-radius: 3px;
+  padding: 0.5em;
+}
+main section.herosection div img {
+  width: 100%;
+}
+main section.herosection div h2 {
+  font-size: 0.75em;
+}
+main section.herosection div p {
+  font-size: 0.5em;
+}
+main section.summaryheader {
+  background-image: url(../images/bluepaint_bg2.svg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #aec4c0;
+  padding-bottom: 2em;
+  margin-bottom: 16em;
+}
+main section.summaryheader h2 {
+  padding: 1.5em 0 0 1em;
+  font-size: 1em;
+}
+main section.summaryheader p {
+  font-size: 0.75em;
+  padding: 1.75em 0 1em 2em;
+  width: 60%;
+  font-family: 'Inter', sans-serif;
+}
+main section.summaryheader img {
+  position: absolute;
+  top: 117px;
+  right: -320px;
+  transform: rotate(5deg);
+  scale: 1.25;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 300ms;
+}
+main section.summaryheader div.detailscard {
+  background-color: #fae083;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  width: 75%;
+  padding: 1em 1.5em;
+  position: absolute;
+  left: 73px;
+  transition: transform 300ms;
+}
+main section.summaryheader div.detailscard h5 {
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+}
+main section.summaryheader div.detailscard p {
+  padding: 0.25em 0 2em 0;
+}
+main section.summaryheader div.detailscard ul {
+  font-family: 'Inter', sans-serif;
+  display: inline-block;
+  list-style-type: disc;
+  padding-left: 1em;
+  font-size: 0.75em;
+}
+main section.imgcenter {
+  margin-top: 4em;
+}
+main section.imgcenter h3 {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 1em;
+}
+main section.imgcenter p {
+  font-size: 0.75em;
+  width: 85%;
+  margin: 1em auto 1em 2em;
+  font-family: 'Inter', sans-serif;
+}
+main section.imgcenter img {
+  width: 85%;
+  margin: 0 auto 2em auto;
+  display: block;
+}
+main section.commentsection {
+  font-family: 'Inter', sans-serif;
+  margin: 5em auto;
+  text-align: center;
+  /*q::before {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5em;
+            content: open-quote;
+        }
+        q::after {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5em;
+            content: close-quote;
+        }*/
+}
+main section.commentsection q {
+  display: block;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  padding-top: 1em;
+}
+main section.commentsection p {
+  font-size: 0.75em;
+  opacity: 0.5;
+  padding-top: 1em;
+}
+main section.commentsection div {
+  height: 4px;
+  background: #d7d7d7;
+  width: 30%;
+  display: inline-block;
+  vertical-align: middle;
+}
+main section.commentsection img {
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0.25;
+}
+main section.polaroidright {
+  margin-bottom: -200px;
+  margin-top: -0.5em;
+  clear: both;
+  overflow: hidden;
+  background-color: #aec4c0;
+}
+main section.polaroidright img {
+  width: 80%;
+  margin: 1em;
+  position: relative;
+  right: -65px;
+}
+main section.polaroidright h3 {
+  padding: 2.25em 0 0 1em;
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+main section.polaroidright p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75em;
+  padding: 1.75em 0 0 1em;
+}
+main img.backpolaroid {
+  transform: rotate(8deg);
+  right: 0;
+  left: 0;
+  top: 20px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 300ms, z-index 1ms step-end;
+}
+main img.frontpolaroid {
+  transform: rotate(-9deg);
+  top: -215px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 300ms;
+}
+main section.imgleft {
+  background-image: url(../images/yellowpaint_bg.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0 0 1em 0;
+  clear: both;
+}
+main section.imgleft img {
+  width: 50%;
+  float: right;
+  margin: 0.75em 0 0 0.5em;
+}
+main section.imgleft h3 {
+  padding: 2.25em 0 0 1em;
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+main section.imgleft p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75em;
+  padding: 1.75em 0 0 1em;
+}
+main section.imgleft .leftpostcard {
+  transition: transform 300ms;
+}
+main div#casestudyfirstrow,
+main div#casestudysecondrow {
+  background-color: #b9b9b9;
+}
+main div#casestudyfirstrow img,
+main div#casestudysecondrow img {
+  padding: 1em 2em 1em 2em;
+}
+main #work {
+  background-color: #fff9ee;
+  border: solid 5px #fff0d5;
+  box-shadow: 0px 10px 10px rgba(107, 76, 72, 0.15);
+  padding-top: 1px;
+  margin: 2em 0.5em 0 0.75em;
+}
+main .casestudy {
+  background-color: #d7d7d7;
+  width: 80%;
+  height: 390px;
+  position: relative;
+  margin: 4em auto 0 auto;
+  display: block;
+}
+main .study-content {
+  width: 100%;
+  opacity: 1;
+  height: 10px;
+  transition: all ease 500ms;
+}
+main .study-visual {
+  margin: -2em auto;
+  text-align: center;
+}
+main .study-visual img {
+  margin-top: -2em;
+}
+main .study-content {
+  position: absolute;
+  opacity: 0;
+  transition: all ease 200ms;
+  font-family: 'Inter', sans-serif;
+  padding: 1.5em;
+}
+main .study-content .casestudytitle {
+  font-size: 1.25em;
+  padding-top: 0em;
+  padding-bottom: 0.75em;
+  border-bottom: solid 2px #FFFFFF;
+}
+main .study-content .casestudytitle em {
+  font-size: 0.65em;
+}
+main .study-content p {
+  padding-top: 0.75em;
+  font-size: 0.85em;
+}
+main .study-content button {
+  border: none;
+  background-color: #5a5a5a;
+  color: #FFFFFF;
+}
+main .casestudy:hover .study-content {
+  opacity: 1;
+  transition: all ease 500ms;
+}
+main .casestudy:hover .study-visual {
+  opacity: 0;
+  transition: all ease 500ms;
+}
+main div#casestudyfirstrow {
+  padding-top: 1em;
+  background-color: #fff9ee;
+}
+main div#casestudysecondrow {
+  padding-bottom: 1em;
+  background-color: #fff9ee;
+}
+main section.needcreative {
+  background-image: url(../images/pinkpaint_creative_bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #fff9ee;
+  margin-top: -0.5em;
+}
+main section.needcreative h4 {
+  text-align: center;
+  padding: 1em;
+  font-size: 1.5em;
+  line-height: 1.35em;
+}
+main section.needcreative a {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  background-color: #5a5a5a;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  padding: 0.5em;
+  transition: ease 400ms;
+}
+main section.needcreative a:hover {
+  background-color: #000000;
+  transition: ease 500ms;
+}
+main section.needcreative p {
+  font-size: 0.65em;
+  width: 75%;
+  margin: 1em auto 0 auto;
+  padding: 1em;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+main .tile {
+  -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
+  transform: translateY(50px) rotate(-5deg) translateZ(0);
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  opacity: 0;
+}
+main .inView {
+  opacity: 1;
+  -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+  transform: translateY(0px) rotate(0deg) translateZ(0);
+}
+footer ul {
+  border-top: solid 4px #d7d7d7;
+  margin: 4em 1em 0 1em;
+  text-align: center;
+  padding-top: 1.25em;
+  font-size: 0.85em;
+}
+footer ul li {
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 1em 1em 1em;
+}
+footer #copy {
+  font-size: 0.75em;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  background-image: url(../images/whitepaper_footer.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: #5a5a5a;
+  padding: 0.5em 0;
+}
+.desktop {
+  display: none;
+}
+.mobile {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  background-color: #fff9ee;
+  color: #000000;
+}
+/*
+
+TABLET STYLESHEET
+
+The following CSS affects all screen sizes larger than 480 pixels wide.
+
+*/
+@media only screen and (min-width: 481px) {
+  header ul {
+    padding-left: 3em;
+  }
+  header p {
+    padding-right: 3em;
+  }
+  main a {
+    width: 50%;
+  }
+  main .button {
+    width: 50%;
+  }
+  main .pagebreak {
+    top: 30px;
+  }
+  main section.herosection img {
+    width: 52%;
+    padding: 1em;
+  }
+  main section.herosection img#heropolaroid {
+    box-shadow: none;
+  }
+  main section.herosection div {
+    top: 300px;
+    left: 68%;
+    padding: 1.5em;
+  }
+  main section.summaryheader {
+    padding-bottom: 5em;
+    margin-bottom: 14em;
+  }
+  main section.summaryheader img {
+    top: 224px;
+    right: -325px;
+    scale: 1.5;
+  }
+  main section.summaryheader h2 {
+    font-size: 1.5em;
+    padding-left: 0.5em;
+    line-height: 1.5em;
+  }
+  main section.summaryheader p {
+    font-size: 0.85em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  main section.summaryheader div {
+    margin: 0 auto 0 5em;
+    width: 80%;
+    overflow: visible;
+  }
+  main section.summaryheader div.detailscard {
+    width: 35%;
+    top: 390px;
+    left: 20px;
+  }
+  main section.imgcenter h3 {
+    font-size: 1.5em;
+    padding-left: 0.5em;
+    padding-right: 4em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+  }
+  main section.imgcenter p {
+    font-size: 0.85em;
+    padding-left: 3em;
+    padding-right: 4em;
+    margin-bottom: 2em;
+  }
+  main section.imgcenter div {
+    margin: 0 auto 0 5em;
+    width: 80%;
+    overflow: visible;
+  }
+  main section.commentsection q {
+    width: 70%;
+    font-size: 1.25em;
+  }
+  main section.imgleft img {
+    width: 35%;
+  }
+  main section.imgleft div {
+    padding-left: 3em;
+  }
+  main .casestudy {
+    width: 55%;
+  }
+  main section.polaroidright {
+    padding-top: 2em;
+    margin-top: -2.5em;
+    margin-bottom: -305px;
+  }
+  main section.polaroidright img {
+    width: 35%;
+  }
+  main section.polaroidright h3 {
+    padding-left: 3em;
+    width: 50%;
+  }
+  main section.polaroidright p {
+    padding-left: 4em;
+    width: 50%;
+  }
+  main section.polaroidright div {
+    padding-top: 1em;
+  }
+  main section.polaroidright .frontpolaroid {
+    right: -112px;
+    z-index: 1;
+  }
+  main section.polaroidright .backpolaroid {
+    left: 575px;
+    top: -140px;
+    z-index: 1;
+  }
+  main section.needcreative {
+    padding-top: 2.5em;
+  }
+  main section.needcreative p {
+    font-size: 0.65em;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-top: 0;
+  }
+  footer ul {
+    margin: 4em 5em 0 5em;
+  }
+  footer .mobile {
+    display: inline-block;
+  }
+  footer #copy {
+    background-image: none;
+  }
+}
+/*
+
+DESKTOP STYLESHEET
+
+The following CSS affects all screen sizes larger than 1024 pixels wide.
+
+*/
+@media only screen and (min-width: 1025px) {
+  header {
+    padding-bottom: 0.15em;
+  }
+  header h1 {
+    padding-bottom: 0;
+  }
+  main .pagebreak {
+    top: 36px;
+  }
+  main section.herosection {
+    background-image: url(../images/pinkpaint_long_bg.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main section.herosection img {
+    width: 34%;
+  }
+  main section.herosection div {
+    top: 380px;
+  }
+  main section.herosection div img {
+    position: absolute;
+    top: -120px;
+  }
+  main section.herosection img#heropolaroid {
+    left: 170px;
+  }
+  main section.summaryheader {
+    background-image: url(../images/bluepaint_bg.svg);
+  }
+  main section.summaryheader img {
+    top: 190px;
+    right: -145px;
+    scale: 1.35;
+  }
+  main section.summaryheader div.detailscard {
+    width: 30%;
+    top: 380px;
+    left: 15px;
+  }
+  main section.imgcenter div {
+    width: 80%;
+  }
+  main section.commentsection q {
+    width: 50%;
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+  main section.commentsection img {
+    width: 6%;
+  }
+  main section.imgleft {
+    position: relative;
+  }
+  main section.imgleft img {
+    width: 45%;
+    position: absolute;
+    top: 115px;
+    right: -180px;
+    transform: rotate(5deg);
+    margin-top: -3.5em;
+  }
+  main section.imgleft h3 {
+    font-size: 1.5em;
+    padding-left: 0.5em;
+    line-height: 1.5em;
+  }
+  main section.imgleft p {
+    font-size: 0.85em;
+  }
+  main section.imgleft div {
+    margin: 0 auto 0 10em;
+    width: 50%;
+  }
+  main section.polaroidright {
+    overflow: visible;
+    margin-bottom: -390px;
+  }
+  main section.polaroidright img {
+    width: 30%;
+  }
+  main section.polaroidright .backpolaroid {
+    top: -210px;
+    left: 670px;
+  }
+  main section.polaroidright .frontpolaroid {
+    top: -330px;
+    right: -212px;
+  }
+  main section.polaroidright div {
+    width: 75%;
+    margin: 0 auto 0 9em;
+  }
+  main section.polaroidright h3 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding-left: 1em;
+  }
+  main section.polaroidright p {
+    font-size: 0.85em;
+    padding-left: 2em;
+  }
+  main .section {
+    margin: 0;
+  }
+  main section#work {
+    margin-left: 8em;
+    margin-right: 8em;
+  }
+  main div#casestudysecondrow {
+    margin-bottom: 3em;
+  }
+  main section.needcreative {
+    margin-bottom: 2em;
+  }
+  main section.needcreative h4 {
+    font-size: 2em;
+    padding-top: 2em;
+  }
+  main section.needcreative p {
+    margin-top: 1em;
+  }
+  main section.needcreative a {
+    width: 35%;
+  }
+  footer {
+    border-top: solid 5px #d7d7d7;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+  }
+  footer ul {
+    display: inline-block;
+    text-align: left;
+    border: none;
+    margin: 0;
+  }
+  footer ul li {
+    padding-left: 0;
+  }
+  footer ul .mobile {
+    display: none;
+  }
+  footer #copy {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 1em;
+    background-image: none;
+  }
+  footer p {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    margin: 1.25em;
+  }
+  .desktop {
+    display: inline-block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  header {
+    padding: 0.5em 2em 0 2em;
+  }
+  header ul {
+    font-size: 1em;
+  }
+  header ul li {
+    padding-left: 3em;
+  }
+  header p {
+    font-size: 1em;
+    padding-right: 3em;
+  }
+  main {
+    /*.study-visual {
+            //position: inherit;
+            //top: 0;
+            //left: 0;
+            //transition: none;
+            //margin: -5em auto 0 auto;
+            //text-align: center;
+            //width: 35%;
+        }*/
+  }
+  main img {
+    width: 100%;
+  }
+  main .pagebreak {
+    top: 60px;
+  }
+  main section.herosection img {
+    width: 25%;
+  }
+  main section.herosection img#namescribble {
+    position: absolute;
+    top: -176px;
+    left: 30px;
+    scale: 1.5;
+    width: 90%;
+  }
+  main section.herosection img#heropolaroid {
+    top: -20px;
+    left: 380px;
+  }
+  main section.herosection img#underlinescribble {
+    position: absolute;
+    right: -30px;
+    top: 100px;
+    scale: 2;
+  }
+  main section.herosection div {
+    top: 456px;
+    left: 60%;
+    text-align: left;
+    width: 30%;
+    font-size: 1.5em;
+  }
+  main section.summaryheader {
+    overflow: hidden;
+    margin-bottom: 20em;
+  }
+  main section.summaryheader img {
+    right: -330px;
+    top: -120px;
+    scale: 0.43;
+  }
+  main section.summaryheader div {
+    width: 75%;
+  }
+  main section.summaryheader h2 {
+    font-size: 2em;
+    padding-left: 5.5em;
+  }
+  main section.summaryheader p {
+    padding-left: 13em;
+    padding-right: 8em;
+  }
+  main section.summaryheader div.detailscard {
+    width: 17%;
+    left: 200px;
+    top: 450px;
+    padding: 1.75em 2.5em;
+  }
+  main section.imgcenter div {
+    width: 65%;
+    margin: 0 auto 8em auto;
+  }
+  main section.imgcenter h3 {
+    font-size: 2em;
+  }
+  main section.imgcenter p {
+    padding-left: 5em;
+    padding-right: 14em;
+  }
+  main section.commentsection {
+    margin-bottom: 10em;
+  }
+  main section.imgleft {
+    background-position: left;
+  }
+  main section.imgleft img {
+    width: 32%;
+    position: absolute;
+    top: 0;
+    right: 74px;
+    transform: rotate(5deg);
+    margin-top: -3.5em;
+  }
+  main section.imgleft h3 {
+    font-size: 1.5em;
+    padding-left: 0.5em;
+    line-height: 1.5em;
+  }
+  main section.imgleft p {
+    font-size: 0.85em;
+  }
+  main section.imgleft div {
+    margin: 0 auto 0 15em;
+    width: 43%;
+  }
+  main section.polaroidright {
+    overflow: visible;
+    margin-top: -1em;
+  }
+  main section.polaroidright img {
+    width: 20%;
+  }
+  main section.polaroidright div {
+    width: 75%;
+    margin: 0 auto 0 15em;
+  }
+  main section.polaroidright h3 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding-left: 1em;
+  }
+  main section.polaroidright p {
+    font-size: 0.85em;
+    padding-left: 2em;
+  }
+  main section.polaroidright .backpolaroid {
+    left: 1020px;
+    top: -280px;
+  }
+  main section.polaroidright .frontpolaroid {
+    left: 900px;
+    top: -175px;
+  }
+  main section#work {
+    background-image: url(../images/paper_texture_45p.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding-bottom: 4em;
+    padding-top: 3em;
+    box-shadow: 0px 10px 10px rgba(107, 76, 72, 0.15);
+  }
+  main .casestudy {
+    width: 28%;
+    display: inline-block;
+    margin-bottom: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
+    top: 0;
+  }
+  main .study-content .button:hover {
+    background-color: #b9b9b9;
+    cursor: pointer;
+  }
+  main div#casestudyfirstrow,
+  main div#casestudysecondrow {
+    width: 85%;
+    margin: auto;
+    padding: 0 1.5em;
+    text-align: center;
+  }
+  main div#casestudyfirstrow img,
+  main div#casestudysecondrow img {
+    width: 65%;
+  }
+  main div#casestudyfirstrow .study-content,
+  main div#casestudysecondrow .study-content {
+    text-align: left;
+  }
+  main div#casestudyfirstrow {
+    border-radius: 10px 10px 0 0;
+  }
+  main div#casestudysecondrow {
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 3em;
+  }
+  main section.needcreative {
+    margin-top: -1em;
+    margin-bottom: 3em;
+  }
+  main section.needcreative .button {
+    width: 20%;
+    height: 45px;
+  }
+  main section.needcreative h4 {
+    font-size: 2.5em;
+    padding-top: 2em;
+  }
+  main section.needcreative p {
+    margin-top: 1em;
+  }
+  footer {
+    border-top: solid 5px #d7d7d7;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+  }
+  footer ul {
+    display: inline-block;
+    text-align: left;
+    border: none;
+    margin: 0;
+  }
+  footer ul li {
+    padding-right: 2em;
+  }
+  footer ul .mobile {
+    display: none;
+  }
+  footer #copy {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 1em;
+  }
+  footer p {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    margin: 1.25em;
+  }
+  .desktop {
+    display: inline-block;
+  }
+  .mobile {
+    display: none;
+  }
+}
