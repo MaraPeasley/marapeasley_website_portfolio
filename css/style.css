@@ -51,13 +51,13 @@ header h1 {
   display: inline-block;
   text-align: center;
   font-size: 1.5em;
-  padding: 0.5em 0.25em;
+  padding: 0.5em 0.25em 1em 0.25em;
   line-height: 1.5em;
 }
 header img {
   display: inline-block;
   margin: 0 auto -2em auto;
-  width: 4%;
+  width: 15%;
   padding: 0.5em;
 }
 header p {
@@ -74,6 +74,10 @@ header p:hover {
 }
 main {
   background-color: #fae083;
+  /*a:active .button {
+        background-color: @darkColor;
+        color: @lightColor;
+    }*/
   /*
         Need to make the Case Study Boxes in code
         This mainly includes the hover effect box rather than the main img
@@ -157,23 +161,26 @@ main a:hover {
 main .button {
   width: 60%;
   border-radius: 3px;
-  /*position: relative;
-        z-index: 100;
-        display: block;
-        margin: 2em auto 8em auto;
-        width: 60%;
-        height: 35px;
-        font-family: 'Inter', sans-serif;
-        color: @lightColor;
-        background-color: @greyColor6;
-        border: none;
-        cursor: pointer;
-        a {
-            color: @lightColor;
-        }
-        a:visited {
-            color: @lightColor;
-        }*/
+}
+main .casestudytitlebelow {
+  font-size: 1.15em;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  margin: 0.75em auto;
+  width: 60%;
+  padding-bottom: 0.5em;
+  border-bottom: solid 2px #000000;
+}
+main .casestudytitlebelow em {
+  font-size: 0.65em;
+  font-weight: normal;
+  font-style: italic;
+}
+main .casestudydesc {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75em;
+  margin: 0 auto;
+  width: 60%;
 }
 main .pagebreak {
   position: relative;
@@ -407,12 +414,14 @@ main .casestudy {
   position: relative;
   margin: 4em auto 0 auto;
   display: block;
+  border-radius: 10px;
 }
 main .study-content {
   width: 100%;
   opacity: 1;
   height: 10px;
   transition: all ease 500ms;
+  border-radius: 10px;
 }
 main .study-visual {
   margin: -2em auto;
@@ -431,8 +440,8 @@ main .study-content {
 main .study-content .casestudytitle {
   font-size: 1.25em;
   font-weight: bold;
-  padding-top: 0em;
   padding-bottom: 0.75em;
+  border-radius: 10px 10px 0 0;
   border-bottom: solid 2px #FFFFFF;
 }
 main .study-content .casestudytitle em {
@@ -443,6 +452,9 @@ main .study-content .casestudytitle em {
 main .study-content p {
   padding-top: 0.75em;
   font-size: 0.85em;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1em;
+  border-radius: 0 0 10px 10px;
 }
 main .study-content button {
   border: none;
@@ -572,6 +584,9 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   }
   header p {
     padding-right: 3em;
+  }
+  header img {
+    width: 7%;
   }
   main a {
     width: 50%;
@@ -714,7 +729,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
 */
 @media only screen and (min-width: 1025px) {
   header {
-    padding-bottom: 0.15em;
+    padding-bottom: 1em;
   }
   header h1 {
     padding-bottom: 0;
@@ -881,7 +896,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
 }
 @media only screen and (min-width: 1300px) {
   header {
-    padding: 0.5em 2em 0 2em;
+    padding: 0.5em 2em 1em 2em;
   }
   header ul {
     font-size: 1em;
@@ -892,6 +907,9 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
   header p {
     font-size: 1em;
     padding-right: 3em;
+  }
+  header img {
+    width: 5%;
   }
   main {
     /*.study-visual {
@@ -1045,6 +1063,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     margin-right: 1em;
     top: 0;
     border-radius: 10px;
+    height: 530px;
   }
   main .study-content .button:hover {
     background-color: #b9b9b9;
@@ -1059,7 +1078,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
   }
   main div#casestudyfirstrow img,
   main div#casestudysecondrow img {
-    width: 75%;
+    width: 85%;
   }
   main div#casestudyfirstrow .study-content,
   main div#casestudysecondrow .study-content {
