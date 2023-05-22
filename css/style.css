@@ -226,7 +226,7 @@ main section.herosection div p {
   font-size: 0.5em;
 }
 main section.summaryheader {
-  background-image: url(../images/bluepaint_bg2.svg);
+  background-image: url(../images/paint_downturned.svg);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -442,7 +442,7 @@ main .study-content .casestudytitle {
   font-weight: bold;
   padding-bottom: 0.75em;
   border-radius: 10px 10px 0 0;
-  border-bottom: solid 2px #FFFFFF;
+  border-bottom: solid 3px #FFFFFF;
 }
 main .study-content .casestudytitle em {
   font-size: 0.65em;
@@ -614,9 +614,9 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     margin-bottom: 14em;
   }
   main section.summaryheader img {
-    top: 224px;
-    right: -325px;
-    scale: 1.5;
+    top: 135px;
+    right: -480px;
+    scale: 1;
   }
   main section.summaryheader h2 {
     font-size: 1.5em;
@@ -757,7 +757,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     left: 170px;
   }
   main section.summaryheader {
-    background-image: url(../images/bluepaint_bg.svg);
+    background-image: url(../images/paint_upturned.svg);
   }
   main section.summaryheader img {
     top: 190px;
@@ -976,7 +976,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     padding-right: 8em;
   }
   main section.summaryheader div.detailscard {
-    width: 17%;
+    width: 20%;
     left: 200px;
     top: 450px;
     padding: 1.75em 2.5em;
