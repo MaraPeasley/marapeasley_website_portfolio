@@ -277,16 +277,6 @@ main {
             vertical-align: middle;
             opacity: .25;
         }
-        /*q::before {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5em;
-            content: open-quote;
-        }
-        q::after {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5em;
-            content: close-quote;
-        }*/
     }
 
     section.polaroidright {
@@ -439,26 +429,35 @@ main {
     }
     .study-content {
         width: 100%;
+        position: absolute;
         opacity: 1;
         //z-index: 2;
         height: 10px;
-        transition: all ease 500ms;
+        will-change: opacity;
+        -webkit-transition: ease-in-out 300ms;
+        -moz-transition: ease-in-out 300ms;
+        -o-transition: ease-in-out 300ms;
+        transition: ease-in-out 300ms;
         border-radius: 10px;
+        font-family: 'Inter', sans-serif;
+        padding: 1.5em;
     }
     .study-visual {
         margin: -2em auto;
         text-align: center;
+        will-change: opacity;
+        -webkit-transition: ease-in-out 300ms;
+        -moz-transition: ease-in-out 300ms;
+        -o-transition: ease-in-out 300ms;
+        transition: ease-in-out 300ms;
         img {
             margin-top: -2em;
         }
     }
     .study-content {
-        position: absolute;
         opacity: 0;
-        //z-index: 1;
-        transition: all ease 200ms;
-        font-family: 'Inter', sans-serif;
-        padding: 1.5em;
+        z-index: 1;
+        
         .casestudytitle {
             font-size: 1.25em;
             font-weight: bold;
@@ -488,15 +487,28 @@ main {
     .casestudy:hover .study-content {
         opacity: 1;
         //z-index: 2;
-        transition: all ease 500ms;
+        will-change: opacity;
+        -webkit-transition: ease-in-out 300ms;
+        -moz-transition: ease-in-out 300ms;
+        -o-transition: ease-in-out 300ms;
+        transition: ease-in-out 300ms;
     }
     .casestudy:hover .study-visual {
         opacity: 0;
         //z-index: 2;
-        transition: all ease 500ms;
+        will-change: opacity;
+        -webkit-transition: ease-in-out 300ms;
+        -moz-transition: ease-in-out 300ms;
+        -o-transition: ease-in-out 300ms;
+        transition: ease-in-out 300ms;
         //transform: scale(.5);
         //transform-origin: center center;
     }
+
+
+
+
+
     div#casestudyfirstrow, div#casestudysecondrow {
         padding-top: 1em;
         background-color: @color1;
@@ -642,9 +654,6 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
         .casestudytitlebelow {
             //margin: .75em 8em;
             padding-top: 1.5em;
-        }
-        .casestudydesc {
-            //padding: 0em 12.5em;
         }
         .pagebreak {
             top: 30px;
